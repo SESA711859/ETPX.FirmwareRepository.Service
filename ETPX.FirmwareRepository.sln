@@ -1,0 +1,31 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Copyright Schneider-Electric 2024
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ETPX.FirmwareRepository", "ETPX.FirmwareRepository\ETPX.FirmwareRepository.csproj", "{D7E4A69E-ECCD-4AAF-B62F-8333F9D394AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETPX.FirmwareRepository.Tests", "ETPX.FirmwareRepository.Tests\ETPX.FirmwareRepository.Tests.csproj", "{D945E3E0-BC0F-43C0-8992-5867137DEC34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7E4A69E-ECCD-4AAF-B62F-8333F9D394AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E4A69E-ECCD-4AAF-B62F-8333F9D394AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E4A69E-ECCD-4AAF-B62F-8333F9D394AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E4A69E-ECCD-4AAF-B62F-8333F9D394AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D945E3E0-BC0F-43C0-8992-5867137DEC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D945E3E0-BC0F-43C0-8992-5867137DEC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D945E3E0-BC0F-43C0-8992-5867137DEC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D945E3E0-BC0F-43C0-8992-5867137DEC34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB7532E9-2D36-42CC-81B7-643E893DE0B4}
+	EndGlobalSection
+EndGlobal

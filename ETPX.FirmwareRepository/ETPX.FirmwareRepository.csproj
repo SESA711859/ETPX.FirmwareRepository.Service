@@ -1,0 +1,46 @@
+﻿<!-- Copyright Schneider-Electric 2024 -->
+
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>30f3e82c-5ed4-4f63-b011-ff01c23fac85</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Domain\Command\**" />
+    <Content Remove="Domain\Command\**" />
+    <EmbeddedResource Remove="Domain\Command\**" />
+    <None Remove="Domain\Command\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\commercialReference.cs" />
+    <Compile Remove="Helpers\ReApplyOptionalRouteParameterOperationFilter.cs" />
+    <Compile Remove="Validators\CommericalReferenceValidator.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Confluent.Kafka" Version="2.4.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="HtmlSanitizer" Version="8.0.865" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.9.0" />
+    <PackageReference Include="RestSharp" Version="111.3.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+  <ItemGroup>
+	<SonarQubeSetting Include="sonar.coverage.exclusions">
+		<Value>**/Program.cs</Value>
+	</SonarQubeSetting>
+</ItemGroup>
+
+</Project>
